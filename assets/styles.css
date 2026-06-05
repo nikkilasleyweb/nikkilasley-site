@@ -493,7 +493,8 @@ section { position: relative; }
 }
 @media (max-width: 860px) {
   .topbar { display:none; }
-  .nav-links, .nav-search { display:none; }
+  .nav-links, .nav-search, .nav-right .btn { display:none; }
+  .brand .name { white-space: nowrap; }
   .nav-toggle {
     display:grid; place-items:center; width:44px; height:44px; border-radius:10px;
     border:1px solid var(--line); background:#fff; cursor:pointer;
