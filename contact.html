@@ -82,9 +82,10 @@
       <div class="reveal" style="background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh);padding:clamp(28px,3.5vw,48px);">
         <h2 class="h-md" style="margin-bottom:10px;">Start the conversation</h2>
         <p class="muted" style="margin-bottom:30px;">Tell me a little about what you're working on — the more specific you are, the faster I can be useful.</p>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" style="display:grid;gap:20px;">
-          <input type="hidden" name="form-name" value="contact" />
-          <p style="display:none;"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+        <form method="POST" action="https://formspree.io/f/meewwrjb" style="display:grid;gap:20px;">
+          <input type="hidden" name="_subject" value="New contact from nikkilasley.com" />
+          <input type="hidden" name="_next" value="https://nikkilasley.com/thank-you.html" />
+          <p style="display:none;"><label>Don't fill this out if you're human: <input name="_gotcha" /></label></p>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;" class="form-row">
             <div class="field"><label for="fn">First name</label><input id="fn" name="First name" type="text" placeholder="First name" required /></div>
             <div class="field"><label for="ln">Last name</label><input id="ln" name="Last name" type="text" placeholder="Last name" required /></div>
