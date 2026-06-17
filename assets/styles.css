@@ -12,11 +12,11 @@
   --navy:        #0C2233;
   --navy-700:    #143047;
   --navy-600:    #1B3B53;
-  --blue:        #1A6CB4;
-  --blue-600:    #155EA0;
-  --blue-bright: #2E8AD8;
-  --blue-tint:   #E9F2FB;
-  --blue-tint-2: #F3F8FD;
+  --blue:        #6E51AF;
+  --blue-600:    #5C4197;
+  --blue-bright: #9C82D6;
+  --blue-tint:   #F0EBFA;
+  --blue-tint-2: #F7F4FC;
 
   /* Ink + neutrals */
   --ink:    #14202B;
@@ -44,7 +44,7 @@
   --sh-sm: 0 1px 2px rgba(12,34,51,.06), 0 2px 6px rgba(12,34,51,.05);
   --sh:    0 4px 14px rgba(12,34,51,.07), 0 14px 40px rgba(12,34,51,.07);
   --sh-lg: 0 10px 30px rgba(12,34,51,.10), 0 30px 70px rgba(12,34,51,.12);
-  --sh-blue: 0 10px 26px rgba(26,108,180,.30);
+  --sh-blue: 0 10px 26px rgba(110,81,175,.30);
 }
 
 * { box-sizing: border-box; }
@@ -117,8 +117,8 @@ section { position: relative; }
   display: inline-block;
 }
 .eyebrow.center { justify-content: center; }
-.eyebrow.on-dark { color: #7FB6E6; }
-.eyebrow.on-dark::before { background: #7FB6E6; }
+.eyebrow.on-dark { color: #B6A0E0; }
+.eyebrow.on-dark::before { background: #B6A0E0; }
 
 .h-xl  { font-size: clamp(40px, 6.2vw, 78px); }
 .h-lg  { font-size: clamp(33px, 4.6vw, 56px); }
@@ -186,7 +186,7 @@ section { position: relative; }
 .topbar a:hover { color: #fff; }
 .topbar .tb-left { display: flex; gap: 26px; align-items: center; }
 .topbar .tb-item { display: inline-flex; align-items: center; gap: 8px; }
-.topbar .tb-item svg { width: 14px; height: 14px; color: #5FA0D6; }
+.topbar .tb-item svg { width: 14px; height: 14px; color: #A98FD2; }
 .topbar .tb-social { display: flex; gap: 16px; align-items: center; }
 .topbar .tb-social svg { width: 15px; height: 15px; }
 
@@ -350,6 +350,13 @@ section { position: relative; }
 .stat .lbl { margin-top: 10px; font-size: 15px; color: var(--muted); }
 .stat.on-dark .lbl { color:#9FB3C6; }
 .stat .num b { color: var(--blue); }
+
+
+/* metric color blocks */
+.stat-card { background:#8A6BC9; border-radius:16px; padding:26px 22px; }
+.stat-card .num { font-family:var(--display); font-weight:800; font-size:clamp(34px,4.4vw,46px); color:#fff; letter-spacing:-.03em; line-height:1; }
+.stat-card .num b { color:#E4D7F7; }
+.stat-card .lbl { margin-top:12px; font-size:14px; line-height:1.45; color:#EDE5F8; }
 
 /* check list */
 .checks { list-style:none; margin:0; padding:0; display:grid; gap:14px; }
