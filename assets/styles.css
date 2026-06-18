@@ -352,6 +352,14 @@ section { position: relative; }
 .stat .num b { color: var(--blue); }
 
 
+
+/* hero metric color blocks (teal) */
+.hero-stats { display:grid; grid-template-columns:repeat(3,minmax(96px,1fr)); gap:12px; max-width:540px; }
+.stat-card-t { background:#1F8C82; border-radius:14px; padding:20px 16px; }
+.stat-card-t .num { font-family:var(--display); font-weight:800; font-size:34px; color:#fff; letter-spacing:-.03em; line-height:1; }
+.stat-card-t .num b { color:#BCEAE3; }
+.stat-card-t .lbl { margin-top:8px; font-size:12.5px; line-height:1.4; color:#D6F1ED; }
+
 /* metric color blocks */
 .stat-card { background:#8A6BC9; border-radius:16px; padding:26px 22px; }
 .stat-card .num { font-family:var(--display); font-weight:800; font-size:clamp(34px,4.4vw,46px); color:#fff; letter-spacing:-.03em; line-height:1; }
