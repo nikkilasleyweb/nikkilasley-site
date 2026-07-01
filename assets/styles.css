@@ -521,6 +521,10 @@ section { position: relative; }
   .mobile-menu.open { display:block; }
   .hero-grid, .cta-grid, .contact-grid, .feat-article { grid-template-columns: 1fr !important; }
   .feat-article .ph { min-height: 260px !important; }
+  /* mobile hero: show proof stats before the CTA buttons */
+  .hero-col { display:flex; flex-direction:column; }
+  .hero-col .hero-stats { order:1; margin-top:0 !important; margin-bottom:34px; }
+  .hero-col .hero-cta { order:2; }
 }
 @media (max-width: 560px) {
   body { font-size: 16px; }
